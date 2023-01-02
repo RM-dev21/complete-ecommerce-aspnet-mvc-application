@@ -361,3 +361,11 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# To ignore
+.idea/
+bin/
+[Dd]ebug
+[Oo]bj
+.vs
+.vs/
