@@ -1,15 +1,15 @@
-﻿@*Define model*@ 
-@model IEnumerable<Actor>
+﻿@*Define model*@
+@model IEnumerable<Producer>
 
 @*Define ViewData*@
 @{
-	ViewData["Title"] = "List of Actors";
+	ViewData["Title"] = "List of Producers";
 }
 
 
 @*Write code*@
-<div ckass = "row">
-	<div class = "col-md-8 offset-md-2">
+<div ckass="row">
+	<div class="col-md-8 offset-md-2">
 		<table class="table">
 			<thead>
 				<tr class="text-center">
@@ -24,7 +24,7 @@
 				{
 					<tr>
 						<td class=" align-middle">
-							<img class="rounded-circle" src="@item.ProfilePictureURL" alt="@item.FullName" style="max-width: 100px" >  
+							<img class="rounded-circle" src="@item.ProfilePictureURL" alt="@item.FullName" style="max-width: 150px">
 						</td>
 						<td class=" align-middle">
 							@Html.DisplayFor(modelItem => item.FullName)
@@ -40,7 +40,7 @@
 					</tr>
 				}
 			</tbody>
-			
+
 		</table>
 	</div>
 </div>
