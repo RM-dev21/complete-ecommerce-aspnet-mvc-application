@@ -1,11 +1,12 @@
 ﻿using eTickets.Models;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace eTickets.Data.Services
 {
     public interface IActorsService
     {
-        IEnumerable<Actor> GetAll(); //all actors from db
+        Task<IEnumerable<Actor>> GetAll(); //all actors from db
         Actor GetById(int id); // one actor from db
         void Add(Actor actor); // add data to db
         Actor Update(int id, Actor newActor); // update data in db
