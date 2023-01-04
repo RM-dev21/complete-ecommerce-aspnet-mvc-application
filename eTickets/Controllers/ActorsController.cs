@@ -20,5 +20,12 @@ namespace eTickets.Controllers
 
             return View(data);
         }
+
+
+        // Get: Actors/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
